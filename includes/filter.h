@@ -5,6 +5,7 @@
 
 typedef struct _filter {
     bitarray *bitArray;
+    int *poids;
     int m;
     int k;
 
