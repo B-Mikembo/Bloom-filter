@@ -1,7 +1,12 @@
 #ifndef FILTER_H
 #define FILTER_H
 
-#include "bitarray.h";
+#include <stdlib.h>
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <math.h>
+#include "bitarray.h"
 
 typedef struct _filter {
     bitarray *bitArray;

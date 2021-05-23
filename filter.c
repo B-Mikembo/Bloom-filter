@@ -1,9 +1,5 @@
-#include "../includes/filter.h"
-#include "../includes/bitarray.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <assert.h>
-#include <math.h>
+#include "filter.h"
+
 
 filter *create_filter(int m, int k){
     filter *f = (filter *)malloc(sizeof(filter));
@@ -29,13 +25,13 @@ void hash(filter *f, char *str, unsigned hashes[]){
     int i,j;
     for(i=0; i< f->k; i++){
         for(j = 0; str[j] != '\0'; j++){
-            hashes[i] += str[j]*(pow(f->poids[i], strlen(str)-j+1));
+            hashes[i] = str[j]*(pow(f->poids[i], strlen(str)-j+1));
         }
     }
 }
 
 void add_filter(filter *f, char *str){
-    assert(f != NULL);
+    assert(f != NULL && str != NULL);
     unsigned *hashes = (unsigned*)malloc(sizeof(unsigned)*f->k);
     int i;
     hash(f, str, hashes);
@@ -45,7 +41,7 @@ void add_filter(filter *f, char *str){
 }
 
 int is_member_filter(filter *f, char *str){
-    assert(f != NULL);
+    assert(f != NULL && str != NULL);
     unsigned *test = (unsigned*)malloc(sizeof(unsigned)*f->k);
     int i;
     hash(f, str, test);
