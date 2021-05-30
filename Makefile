@@ -1,8 +1,8 @@
 CC=gcc
 CFLAGS=-Wall -ansi -g
 LDFLAGS=-lm
-DEPS=bitarray.h filter.h fichier.h
-OBJ=bitarray.o filter.o main.o fichier.o
+DEPS=bitarray.h filter.h
+OBJ=bitarray.o filter.o main.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
