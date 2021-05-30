@@ -24,6 +24,7 @@ void hash(filter *f, char *str, unsigned hashes[]){
     assert(f != NULL);
     int i,j;
     for(i=0; i< f->k; i++){
+        hashes[i] = 0;
         for(j = 0; str[j] != '\0'; j++){
             hashes[i] = str[j]*(pow(f->poids[i], strlen(str)-j+1));
         }
