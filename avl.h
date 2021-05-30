@@ -2,23 +2,23 @@
 #define AVL_H
 
 typedef struct _node {
-    int elt;                 /* donnee stockee : un entier  */
+    char *word;                 /* donnee stockee : un mot  */
     int height;              /* la hauteur de l'arbre       */
     struct _node *left;      /* pointeur sur le fils gauche */
     struct _node *right;     /* pointeur sur le fils droit  */
 } node;
 
-node *create_node(int elt);
+node *create_node(char *word);
 
 void free_tree(node *t);
 
 int is_avl(node *t);
 
-node *find_avl(node *t, int elt);
+node *find_avl(node *t, char *word);
 
-node *insert_avl(node *t, int elt);
+node *insert_avl(node *t, char *word);
 
-node *remove_avl(node *t, int elt);
+node *remove_avl(node *t, char *word);
 
 void update_height(node *t);
 

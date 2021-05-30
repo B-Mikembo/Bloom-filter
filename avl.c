@@ -4,10 +4,10 @@
 #include <assert.h>
 #include <time.h>
 
-node *create_node(int elt) {
+node *create_node(char *word) {
     node *n = (node *)malloc(sizeof(node));
     assert(n != NULL);
-    n->elt = elt;
+    n->word = word;
     n->height = 0;
     n->left = NULL;
     n->right = NULL;
@@ -24,10 +24,10 @@ void free_tree(node *t) {
 
 /* SEARCH */
 
-node *find_avl(node *t, int elt) {
+node *find_avl(node *t, char *word) {
     node *ptr = t;
-    while (ptr != NULL && ptr->elt != elt) {
-        if (ptr->elt > elt)
+    while (ptr != NULL && ptr->word != word) {
+        if (ptr->word > word)
             ptr = ptr->left;
         else
             ptr = ptr->right;
@@ -167,15 +167,15 @@ node *rebalance(node *t){
     return t;
 }
 
-node *insert_avl(node *t, int elt){
+node *insert_avl(node *t, char *word){
     if(t == NULL){
-        return create_node(elt);
+        return create_node(word);
     }
-    else if(t->elt > elt){
-        t->left = insert_avl(t->left, elt);
+    else if(t->word > word){
+        t->left = insert_avl(t->left, word);
     }
-    else if(t->elt < elt){
-        t->right = insert_avl(t->right, elt);
+    else if(t->word < word){
+        t->right = insert_avl(t->right, word);
     }
     update_height(t);
     t = rebalance(t);
