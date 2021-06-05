@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 #include <time.h>
 
 node *create_node(char *word) {
@@ -50,38 +51,12 @@ void update_height(node *t){
 
 }
 
-/*int height(node *t){
-    if(t == NULL){
-        return -1;
-    }
-    else{
-        if (t->left == NULL && t->right == NULL){
-            return 0;
-        }
-        else if(t->left->height > t->right->height || t->right == NULL){
-            return t->left->height+1;
-        }
-        else{
-            return t->right->height-1;
-        }
-    }
-}*/
-
 int height_node(node *t){
     if(t == NULL){
         return -1;
     }
     return t->height;
 }
-
-/*node *rotate_right(node *t){
-    node *x = t->left;
-    t->left = x->right;
-    x->right = t;
-    update_height(x);
-    update_height(t);
-    return x;
-}*/
 
 node *rotate_right(node *t){
     node *x = t->left;
@@ -92,15 +67,6 @@ node *rotate_right(node *t){
     update_height(x);
     return x;
 }
-
-/*node *rotate_left(node *t){
-    node *x = t->right;
-    t->right = x->left;
-    x->left = t;
-    update_height(x);
-    update_height(t);
-    return x;
-}*/
 
 node *rotate_left(node *t){
     node *x = t->right;
@@ -167,14 +133,18 @@ node *rebalance(node *t){
     return t;
 }
 
+int less(char *s1, char *s2) {
+    return strcmp(s1, s2) < 0;
+}
+
 node *insert_avl(node *t, char *word){
     if(t == NULL){
         return create_node(word);
     }
-    else if(t->word > word){
+    else if(less(t->word,word)){
         t->left = insert_avl(t->left, word);
     }
-    else if(t->word < word){
+    else if(less(t->word,word)){
         t->right = insert_avl(t->right, word);
     }
     update_height(t);
@@ -192,9 +162,9 @@ int is_avl(node *t){
     return 0;
 }
 
-int chrono(int n){
+/*int chrono(int n){
     clock_t start, end;
-    int i;
+    char *i;
     node *t = NULL;
     start = clock();
     for (i = 0; i < 2*n; i++) {
@@ -203,4 +173,4 @@ int chrono(int n){
     end = clock();
     return (end-start)*1000/CLOCKS_PER_SEC;
     
-}
+}*/

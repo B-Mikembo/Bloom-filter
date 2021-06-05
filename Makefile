@@ -1,8 +1,8 @@
 CC=gcc
 CFLAGS=-Wall -ansi -g
 LDFLAGS=-lm
-DEPS=bitarray.h filter.h
-OBJ=bitarray.o filter.o main.o
+DEPS=bitarray.h filter.h avl.h visualtree.h
+OBJ=bitarray.o filter.o main.o avl.o visualtree.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
