@@ -1,0 +1,306 @@
+digraph tree {
+  splines=false
+  node [shape=record,height=.1]
+  edge [tailclip=false, arrowtail=dot, dir=both];
+
+  n0x5618165f27e0 [label="<left> | <value> anyone
+ | <right>"];
+  n0x5618165f27e0:left:c -> n0x5618165f1550:value;
+  n0x5618165f1550 [label="<left> | <value> administration
+ | <right>"];
+  n0x5618165f1550:left:c -> n0x5618165f10d0:value;
+  n0x5618165f10d0 [label="<left> | <value> account
+ | <right>"];
+  n0x5618165f10d0:left:c -> n0x5618165f0e90:value;
+  n0x5618165f0e90 [label="<left> | <value> about
+ | <right>"];
+  n0x5618165f0e90:left:c -> n0x5618165f0d70:value;
+  n0x5618165f0d70 [label="<left> | <value> ability
+ | <right>"];
+  n0x5618165f0d70:left:c -> n0x5618165f0ce0:value;
+  n0x5618165f0ce0 [label="<left> | <value> a
+ | <right>"];
+  n0x5618165f0ce0:left:c -> n0x5618165f22d0:value;
+  n0x5618165f22d0 [label="<left> | <value> American
+ | <right>"];
+  n0x5618165f0d70:right:c -> n0x5618165f0e00:value;
+  n0x5618165f0e00 [label="<left> | <value> able
+ | <right>"];
+  n0x5618165f0e90:right:c -> n0x5618165f0fb0:value;
+  n0x5618165f0fb0 [label="<left> | <value> accept
+ | <right>"];
+  n0x5618165f0fb0:left:c -> n0x5618165f0f20:value;
+  n0x5618165f0f20 [label="<left> | <value> above
+ | <right>"];
+  n0x5618165f0fb0:right:c -> n0x5618165f1040:value;
+  n0x5618165f1040 [label="<left> | <value> according
+ | <right>"];
+  n0x5618165f10d0:right:c -> n0x5618165f1310:value;
+  n0x5618165f1310 [label="<left> | <value> activity
+ | <right>"];
+  n0x5618165f1310:left:c -> n0x5618165f11f0:value;
+  n0x5618165f11f0 [label="<left> | <value> act
+ | <right>"];
+  n0x5618165f11f0:left:c -> n0x5618165f1160:value;
+  n0x5618165f1160 [label="<left> | <value> across
+ | <right>"];
+  n0x5618165f11f0:right:c -> n0x5618165f1280:value;
+  n0x5618165f1280 [label="<left> | <value> action
+ | <right>"];
+  n0x5618165f1310:right:c -> n0x5618165f1430:value;
+  n0x5618165f1430 [label="<left> | <value> add
+ | <right>"];
+  n0x5618165f1430:left:c -> n0x5618165f13a0:value;
+  n0x5618165f13a0 [label="<left> | <value> actually
+ | <right>"];
+  n0x5618165f1430:right:c -> n0x5618165f14c0:value;
+  n0x5618165f14c0 [label="<left> | <value> address
+ | <right>"];
+  n0x5618165f1550:right:c -> n0x5618165f1e50:value;
+  n0x5618165f1e50 [label="<left> | <value> allow
+ | <right>"];
+  n0x5618165f1e50:left:c -> n0x5618165f19d0:value;
+  n0x5618165f19d0 [label="<left> | <value> agency
+ | <right>"];
+  n0x5618165f19d0:left:c -> n0x5618165f1790:value;
+  n0x5618165f1790 [label="<left> | <value> after
+ | <right>"];
+  n0x5618165f1790:left:c -> n0x5618165f1670:value;
+  n0x5618165f1670 [label="<left> | <value> adult
+ | <right>"];
+  n0x5618165f1670:left:c -> n0x5618165f15e0:value;
+  n0x5618165f15e0 [label="<left> | <value> admit
+ | <right>"];
+  n0x5618165f1670:right:c -> n0x5618165f1700:value;
+  n0x5618165f1700 [label="<left> | <value> affect
+ | <right>"];
+  n0x5618165f1790:right:c -> n0x5618165f18b0:value;
+  n0x5618165f18b0 [label="<left> | <value> against
+ | <right>"];
+  n0x5618165f18b0:left:c -> n0x5618165f1820:value;
+  n0x5618165f1820 [label="<left> | <value> again
+ | <right>"];
+  n0x5618165f18b0:right:c -> n0x5618165f1940:value;
+  n0x5618165f1940 [label="<left> | <value> age
+ | <right>"];
+  n0x5618165f19d0:right:c -> n0x5618165f1c10:value;
+  n0x5618165f1c10 [label="<left> | <value> agreement
+ | <right>"];
+  n0x5618165f1c10:left:c -> n0x5618165f1af0:value;
+  n0x5618165f1af0 [label="<left> | <value> ago
+ | <right>"];
+  n0x5618165f1af0:left:c -> n0x5618165f1a60:value;
+  n0x5618165f1a60 [label="<left> | <value> agent
+ | <right>"];
+  n0x5618165f1af0:right:c -> n0x5618165f1b80:value;
+  n0x5618165f1b80 [label="<left> | <value> agree
+ | <right>"];
+  n0x5618165f1c10:right:c -> n0x5618165f1d30:value;
+  n0x5618165f1d30 [label="<left> | <value> air
+ | <right>"];
+  n0x5618165f1d30:left:c -> n0x5618165f1ca0:value;
+  n0x5618165f1ca0 [label="<left> | <value> ahead
+ | <right>"];
+  n0x5618165f1d30:right:c -> n0x5618165f1dc0:value;
+  n0x5618165f1dc0 [label="<left> | <value> all
+ | <right>"];
+  n0x5618165f1e50:right:c -> n0x5618165f2360:value;
+  n0x5618165f2360 [label="<left> | <value> among
+ | <right>"];
+  n0x5618165f2360:left:c -> n0x5618165f2090:value;
+  n0x5618165f2090 [label="<left> | <value> already
+ | <right>"];
+  n0x5618165f2090:left:c -> n0x5618165f1f70:value;
+  n0x5618165f1f70 [label="<left> | <value> alone
+ | <right>"];
+  n0x5618165f1f70:left:c -> n0x5618165f1ee0:value;
+  n0x5618165f1ee0 [label="<left> | <value> almost
+ | <right>"];
+  n0x5618165f1f70:right:c -> n0x5618165f2000:value;
+  n0x5618165f2000 [label="<left> | <value> along
+ | <right>"];
+  n0x5618165f2090:right:c -> n0x5618165f21b0:value;
+  n0x5618165f21b0 [label="<left> | <value> although
+ | <right>"];
+  n0x5618165f21b0:left:c -> n0x5618165f2120:value;
+  n0x5618165f2120 [label="<left> | <value> also
+ | <right>"];
+  n0x5618165f21b0:right:c -> n0x5618165f2240:value;
+  n0x5618165f2240 [label="<left> | <value> always
+ | <right>"];
+  n0x5618165f2360:right:c -> n0x5618165f25a0:value;
+  n0x5618165f25a0 [label="<left> | <value> animal
+ | <right>"];
+  n0x5618165f25a0:left:c -> n0x5618165f2480:value;
+  n0x5618165f2480 [label="<left> | <value> analysis
+ | <right>"];
+  n0x5618165f2480:left:c -> n0x5618165f23f0:value;
+  n0x5618165f23f0 [label="<left> | <value> amount
+ | <right>"];
+  n0x5618165f2480:right:c -> n0x5618165f2510:value;
+  n0x5618165f2510 [label="<left> | <value> and
+ | <right>"];
+  n0x5618165f25a0:right:c -> n0x5618165f26c0:value;
+  n0x5618165f26c0 [label="<left> | <value> answer
+ | <right>"];
+  n0x5618165f26c0:left:c -> n0x5618165f2630:value;
+  n0x5618165f2630 [label="<left> | <value> another
+ | <right>"];
+  n0x5618165f26c0:right:c -> n0x5618165f2750:value;
+  n0x5618165f2750 [label="<left> | <value> any
+ | <right>"];
+  n0x5618165f27e0:right:c -> n0x5618165f39e0:value;
+  n0x5618165f39e0 [label="<left> | <value> bar
+ | <right>"];
+  n0x5618165f39e0:left:c -> n0x5618165f30e0:value;
+  n0x5618165f30e0 [label="<left> | <value> at
+ | <right>"];
+  n0x5618165f30e0:left:c -> n0x5618165f2c60:value;
+  n0x5618165f2c60 [label="<left> | <value> around
+ | <right>"];
+  n0x5618165f2c60:left:c -> n0x5618165f2a20:value;
+  n0x5618165f2a20 [label="<left> | <value> approach
+ | <right>"];
+  n0x5618165f2a20:left:c -> n0x5618165f2900:value;
+  n0x5618165f2900 [label="<left> | <value> appear
+ | <right>"];
+  n0x5618165f2900:left:c -> n0x5618165f2870:value;
+  n0x5618165f2870 [label="<left> | <value> anything
+ | <right>"];
+  n0x5618165f2900:right:c -> n0x5618165f2990:value;
+  n0x5618165f2990 [label="<left> | <value> apply
+ | <right>"];
+  n0x5618165f2a20:right:c -> n0x5618165f2b40:value;
+  n0x5618165f2b40 [label="<left> | <value> argue
+ | <right>"];
+  n0x5618165f2b40:left:c -> n0x5618165f2ab0:value;
+  n0x5618165f2ab0 [label="<left> | <value> area
+ | <right>"];
+  n0x5618165f2b40:right:c -> n0x5618165f2bd0:value;
+  n0x5618165f2bd0 [label="<left> | <value> arm
+ | <right>"];
+  n0x5618165f2c60:right:c -> n0x5618165f2ea0:value;
+  n0x5618165f2ea0 [label="<left> | <value> artist
+ | <right>"];
+  n0x5618165f2ea0:left:c -> n0x5618165f2d80:value;
+  n0x5618165f2d80 [label="<left> | <value> art
+ | <right>"];
+  n0x5618165f2d80:left:c -> n0x5618165f2cf0:value;
+  n0x5618165f2cf0 [label="<left> | <value> arrive
+ | <right>"];
+  n0x5618165f2d80:right:c -> n0x5618165f2e10:value;
+  n0x5618165f2e10 [label="<left> | <value> article
+ | <right>"];
+  n0x5618165f2ea0:right:c -> n0x5618165f2fc0:value;
+  n0x5618165f2fc0 [label="<left> | <value> ask
+ | <right>"];
+  n0x5618165f2fc0:left:c -> n0x5618165f2f30:value;
+  n0x5618165f2f30 [label="<left> | <value> as
+ | <right>"];
+  n0x5618165f2fc0:right:c -> n0x5618165f3050:value;
+  n0x5618165f3050 [label="<left> | <value> assume
+ | <right>"];
+  n0x5618165f30e0:right:c -> n0x5618165f3560:value;
+  n0x5618165f3560 [label="<left> | <value> avoid
+ | <right>"];
+  n0x5618165f3560:left:c -> n0x5618165f3320:value;
+  n0x5618165f3320 [label="<left> | <value> audience
+ | <right>"];
+  n0x5618165f3320:left:c -> n0x5618165f3200:value;
+  n0x5618165f3200 [label="<left> | <value> attention
+ | <right>"];
+  n0x5618165f3200:left:c -> n0x5618165f3170:value;
+  n0x5618165f3170 [label="<left> | <value> attack
+ | <right>"];
+  n0x5618165f3200:right:c -> n0x5618165f3290:value;
+  n0x5618165f3290 [label="<left> | <value> attorney
+ | <right>"];
+  n0x5618165f3320:right:c -> n0x5618165f3440:value;
+  n0x5618165f3440 [label="<left> | <value> authority
+ | <right>"];
+  n0x5618165f3440:left:c -> n0x5618165f33b0:value;
+  n0x5618165f33b0 [label="<left> | <value> author
+ | <right>"];
+  n0x5618165f3440:right:c -> n0x5618165f34d0:value;
+  n0x5618165f34d0 [label="<left> | <value> available
+ | <right>"];
+  n0x5618165f3560:right:c -> n0x5618165f37a0:value;
+  n0x5618165f37a0 [label="<left> | <value> bad
+ | <right>"];
+  n0x5618165f37a0:left:c -> n0x5618165f3680:value;
+  n0x5618165f3680 [label="<left> | <value> baby
+ | <right>"];
+  n0x5618165f3680:left:c -> n0x5618165f35f0:value;
+  n0x5618165f35f0 [label="<left> | <value> away
+ | <right>"];
+  n0x5618165f3680:right:c -> n0x5618165f3710:value;
+  n0x5618165f3710 [label="<left> | <value> back
+ | <right>"];
+  n0x5618165f37a0:right:c -> n0x5618165f38c0:value;
+  n0x5618165f38c0 [label="<left> | <value> ball
+ | <right>"];
+  n0x5618165f38c0:left:c -> n0x5618165f3830:value;
+  n0x5618165f3830 [label="<left> | <value> bag
+ | <right>"];
+  n0x5618165f38c0:right:c -> n0x5618165f3950:value;
+  n0x5618165f3950 [label="<left> | <value> bank
+ | <right>"];
+  n0x5618165f39e0:right:c -> n0x5618165f3e60:value;
+  n0x5618165f3e60 [label="<left> | <value> before
+ | <right>"];
+  n0x5618165f3e60:left:c -> n0x5618165f3c20:value;
+  n0x5618165f3c20 [label="<left> | <value> beautiful
+ | <right>"];
+  n0x5618165f3c20:left:c -> n0x5618165f3b00:value;
+  n0x5618165f3b00 [label="<left> | <value> be
+ | <right>"];
+  n0x5618165f3b00:left:c -> n0x5618165f3a70:value;
+  n0x5618165f3a70 [label="<left> | <value> base
+ | <right>"];
+  n0x5618165f3b00:right:c -> n0x5618165f3b90:value;
+  n0x5618165f3b90 [label="<left> | <value> beat
+ | <right>"];
+  n0x5618165f3c20:right:c -> n0x5618165f3d40:value;
+  n0x5618165f3d40 [label="<left> | <value> become
+ | <right>"];
+  n0x5618165f3d40:left:c -> n0x5618165f3cb0:value;
+  n0x5618165f3cb0 [label="<left> | <value> because
+ | <right>"];
+  n0x5618165f3d40:right:c -> n0x5618165f3dd0:value;
+  n0x5618165f3dd0 [label="<left> | <value> bed
+ | <right>"];
+  n0x5618165f3e60:right:c -> n0x5618165f40a0:value;
+  n0x5618165f40a0 [label="<left> | <value> believe
+ | <right>"];
+  n0x5618165f40a0:left:c -> n0x5618165f3f80:value;
+  n0x5618165f3f80 [label="<left> | <value> behavior
+ | <right>"];
+  n0x5618165f3f80:left:c -> n0x5618165f3ef0:value;
+  n0x5618165f3ef0 [label="<left> | <value> begin
+ | <right>"];
+  n0x5618165f3f80:right:c -> n0x5618165f4010:value;
+  n0x5618165f4010 [label="<left> | <value> behind
+ | <right>"];
+  n0x5618165f40a0:right:c -> n0x5618165f42e0:value;
+  n0x5618165f42e0 [label="<left> | <value> between
+ | <right>"];
+  n0x5618165f42e0:left:c -> n0x5618165f41c0:value;
+  n0x5618165f41c0 [label="<left> | <value> best
+ | <right>"];
+  n0x5618165f41c0:left:c -> n0x5618165f4130:value;
+  n0x5618165f4130 [label="<left> | <value> benefit
+ | <right>"];
+  n0x5618165f41c0:right:c -> n0x5618165f4250:value;
+  n0x5618165f4250 [label="<left> | <value> better
+ | <right>"];
+  n0x5618165f42e0:right:c -> n0x5618165f4400:value;
+  n0x5618165f4400 [label="<left> | <value> big
+ | <right>"];
+  n0x5618165f4400:left:c -> n0x5618165f4370:value;
+  n0x5618165f4370 [label="<left> | <value> beyond
+ | <right>"];
+  n0x5618165f4400:right:c -> n0x5618165f4490:value;
+  n0x5618165f4490 [label="<left> | <value> bill
+ | <right>"];
+
+}

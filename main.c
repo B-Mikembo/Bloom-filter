@@ -21,6 +21,12 @@ int main(int argc, char const *argv[])
         printf("Vérification du mot de passe dans le filtre....\n");
         if(is_member_filter(f, line)){
             printf("Peut-être\n");
+            if(find_avl(t, line) == NULL){
+                printf("Non\n");
+                add_filter(f,line);
+                t = insert_avl(t, line);
+                printf("Ajout du mot de passe => %s\n", line);
+            }
         }
         else{
             printf("Non\n");
