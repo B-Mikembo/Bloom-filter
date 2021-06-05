@@ -8,10 +8,11 @@
 node *create_node(char *word) {
     node *n = (node *)malloc(sizeof(node));
     assert(n != NULL);
-    n->word = word;
+    n->word = (char *) malloc((strlen(word) + 1) * sizeof(char));
     n->height = 0;
     n->left = NULL;
     n->right = NULL;
+    strcpy(n->word, word);
     return n;
 }
 
@@ -141,7 +142,7 @@ node *insert_avl(node *t, char *word){
     if(t == NULL){
         return create_node(word);
     }
-    else if(less(t->word,word)){
+    else if(less(word,t->word)){
         t->left = insert_avl(t->left, word);
     }
     else if(less(t->word,word)){

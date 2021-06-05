@@ -26,4 +26,4 @@ valgrind:
 	valgrind --leak-check=full --show-leak-kinds=all ./test
 
 clean:
-	rm -f $(OBJ) test test.o main main.o
+	rm -f $(OBJ) test test.o main main.o current-tree.*

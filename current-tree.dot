@@ -1,9 +1,0 @@
-digraph tree {
-  splines=false
-  node [shape=record,height=.1]
-  edge [tailclip=false, arrowtail=dot, dir=both];
-
-  n0x561bb5f97ce0 [label="<left> | <value> bill
- | <right>"];
-
-}
