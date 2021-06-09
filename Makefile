@@ -15,15 +15,9 @@ test: test.o $(OBJ)
 main: main.o $(OBJ)
 	gcc -o $@ $^ $(LDFLAGS)
 
-application-test:
-	./test
-
-application:
-	./main
-
 valgrind: 
 	make
 	valgrind --leak-check=full --show-leak-kinds=all ./test
 
 clean:
-	rm -f $(OBJ) test test.o main main.o current-tree.*
+	rm -f $(OBJ) test test.o main main.o current-tree.* massif.out*

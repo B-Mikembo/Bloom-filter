@@ -6,6 +6,7 @@
 #include <assert.h>
 #include <string.h>
 #include <math.h>
+#include <time.h>
 #include "bitarray.h"
 
 typedef struct _filter {

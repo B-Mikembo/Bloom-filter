@@ -1,6 +1,12 @@
 #ifndef AVL_H
 #define AVL_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <string.h>
+#include <time.h>
+
 typedef struct _node {
     char *word;                 /* donnee stockee : un mot  */
     int height;              /* la hauteur de l'arbre       */

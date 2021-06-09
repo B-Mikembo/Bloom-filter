@@ -44,6 +44,8 @@ void add_filter(filter *f, char *str){
 }
 
 int is_member_filter(filter *f, char *str){
+    clock_t start, end;
+    start = clock();
     assert(f != NULL && str != NULL);
     unsigned *test = (unsigned*)malloc(sizeof(unsigned)*f->k);
     int i;
@@ -53,5 +55,8 @@ int is_member_filter(filter *f, char *str){
             return 0;
         } 
     }
+    end = clock();
+    unsigned long total = (end - start) / CLOCKS_PER_SEC;
+    printf("Finished Bloom filter in %ld s\n", total);
     return 1;
 }

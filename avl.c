@@ -1,9 +1,4 @@
 #include "avl.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <string.h>
-#include <time.h>
 
 node *create_node(char *word) {
     node *n = (node *)malloc(sizeof(node));
@@ -28,12 +23,17 @@ void free_tree(node *t) {
 
 node *find_avl(node *t, char *word) {
     node *ptr = t;
+    clock_t start, end;
+    start = clock();
     while (ptr != NULL && ptr->word != word) {
         if (ptr->word > word)
             ptr = ptr->left;
         else
             ptr = ptr->right;
     }
+    end = clock();
+    unsigned long total = (end - start)/ CLOCKS_PER_SEC;
+    printf("Finished AVL in %ld s\n", total);
     return ptr;
 }
 
@@ -139,6 +139,8 @@ int less(char *s1, char *s2) {
 }
 
 node *insert_avl(node *t, char *word){
+    clock_t start, end;
+    start = clock();
     if(t == NULL){
         return create_node(word);
     }
@@ -150,6 +152,9 @@ node *insert_avl(node *t, char *word){
     }
     update_height(t);
     t = rebalance(t);
+    end = clock();
+    unsigned long total = (end - start)/ CLOCKS_PER_SEC;
+    printf("\t\t\tFinished insert AVL in %ld s\n", total);
     return t;
 }
 
@@ -162,16 +167,3 @@ int is_avl(node *t){
     }
     return 0;
 }
-
-/*int chrono(int n){
-    clock_t start, end;
-    char *i;
-    node *t = NULL;
-    start = clock();
-    for (i = 0; i < 2*n; i++) {
-        t = insert_avl(t, i);
-    }
-    end = clock();
-    return (end-start)*1000/CLOCKS_PER_SEC;
-    
-}*/
