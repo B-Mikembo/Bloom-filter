@@ -49,5 +49,6 @@ int main(int argc, char const *argv[])
     fclose(file);
     free(line);
     free_tree(t);
+    free_filter(f);
     return 0;
 }

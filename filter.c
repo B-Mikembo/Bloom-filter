@@ -41,6 +41,7 @@ void add_filter(filter *f, char *str){
     for(i = 0; i < f->k; i++){
         set_bitarray(f->bitArray, hashes[i]% f->m);
     }
+    free(hashes);
 }
 
 int is_member_filter(filter *f, char *str){
@@ -52,9 +53,11 @@ int is_member_filter(filter *f, char *str){
     hash(f, str, test);
     for(i = 0; i < f->k; i++){
         if(get_bitarray(f->bitArray, test[i] % f->m) != 1){
+            free(test);
             return 0;
         } 
     }
+    free(test);
     end = clock();
     unsigned long total = (end - start) / CLOCKS_PER_SEC;
     printf("Finished Bloom filter in %ld s\n", total);

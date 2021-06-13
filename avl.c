@@ -15,6 +15,7 @@ void free_tree(node *t) {
     if (t != NULL) {
         free_tree(t->left);
         free_tree(t->right);
+        free(t->word);
         free(t);
     }
 }

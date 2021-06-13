@@ -16,8 +16,8 @@ main: main.o $(OBJ)
 	gcc -o $@ $^ $(LDFLAGS)
 
 valgrind: 
-	make
-	valgrind --leak-check=full --show-leak-kinds=all ./test
+	make main
+	valgrind --leak-check=full --show-leak-kinds=all ./main 16 3 100words.txt
 
 clean:
 	rm -f $(OBJ) test test.o main main.o current-tree.* massif.out*
